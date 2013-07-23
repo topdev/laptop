@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Laptop by topdev</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Laptop</h1>
+        <p>A shell script which turns your Linux or Mac OS X laptop into an awesome development machine.</p>
+
+        <p class="view"><a href="https://github.com/topdev/laptop">View the Project on GitHub <small>topdev/laptop</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/topdev/laptop/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/topdev/laptop/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/topdev/laptop">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="laptop" class="anchor" href="#laptop"><span class="octicon octicon-link"></span></a>Laptop</h1>
+
+<p>Laptop is a script to set up a Mac OS X or Linux laptop for Rails development.</p>
+
+<h2>
+<a name="requirements" class="anchor" href="#requirements"><span class="octicon octicon-link"></span></a>Requirements</h2>
+
+<h3>
+<a name="mac-os-x" class="anchor" href="#mac-os-x"><span class="octicon octicon-link"></span></a>Mac OS X</h3>
+
+<p>1) Install a C compiler.</p>
+
+<p>Use <a href="https://github.com/kennethreitz/osx-gcc-installer/">OS X GCC Installer</a> for
+Snow Leopard (OS X 10.6).</p>
+
+<p>Use <a href="https://developer.apple.com/downloads/index.action">Command Line Tools for XCode</a>
+for Lion (OS X 10.7) or Mountain Lion (OS X 10.8).</p>
+
+<p>2) Set zsh as your login shell:</p>
+
+<pre><code>chsh -s /bin/zsh
+</code></pre>
+
+<h3>
+<a name="linux" class="anchor" href="#linux"><span class="octicon octicon-link"></span></a>Linux</h3>
+
+<p>We support:</p>
+
+<ul>
+<li>
+<a href="https://wiki.ubuntu.com/RaringRingtail/ReleaseNotes">13.04: Raring Ringtail</a>,</li>
+<li>
+<a href="https://wiki.ubuntu.com/QuantalQuetzal/ReleaseNotes">12.10: Quantal Quetzal</a>, and</li>
+<li>
+<a href="https://wiki.ubuntu.com/PrecisePangolin/ReleaseNotes">12.04 LTS: Precise Pangolin</a>,</li>
+<li>Debian stable (currently <a href="http://www.debian.org/releases/stable/">wheezy</a>).</li>
+<li>Debian testing (currently <a href="http://www.debian.org/releases/testing/">jessie</a>).</li>
+</ul><p>1) Install zsh and set it as your login shell:</p>
+
+<pre><code>bash &lt;(wget -qO- https://raw.github.com/thoughtbot/laptop/master/linux-prerequisites)
+</code></pre>
+
+<h2>
+<a name="install" class="anchor" href="#install"><span class="octicon octicon-link"></span></a>Install</h2>
+
+<h3>
+<a name="mac-os-x-1" class="anchor" href="#mac-os-x-1"><span class="octicon octicon-link"></span></a>Mac OS X</h3>
+
+<p>Read, then run the script:</p>
+
+<pre><code>zsh &lt;(curl -s https://raw.github.com/thoughtbot/laptop/master/mac)
+</code></pre>
+
+<h3>
+<a name="linux-1" class="anchor" href="#linux-1"><span class="octicon octicon-link"></span></a>Linux</h3>
+
+<p>Read, then run the script:</p>
+
+<pre><code>zsh &lt;(wget -qO- https://raw.github.com/thoughtbot/laptop/master/linux)
+</code></pre>
+
+<h2>
+<a name="what-it-sets-up" class="anchor" href="#what-it-sets-up"><span class="octicon octicon-link"></span></a>What it sets up</h2>
+
+<ul>
+<li>Bundler gem for managing Ruby libraries</li>
+<li>Exuberant Ctags for indexing files for vim tab completion</li>
+<li>Foreman gem for serving Rails apps locally</li>
+<li>Heroku Config plugin for local <code>ENV</code> variables</li>
+<li>Heroku Toolbelt for interacting with the Heroku API</li>
+<li>Hub gem for interacting with the GitHub API</li>
+<li>Homebrew for managing operating system libraries (OS X only)</li>
+<li>ImageMagick for cropping and resizing images</li>
+<li>Postgres for storing relational data</li>
+<li>Postgres gem for talking to Postgres from Ruby</li>
+<li>Qt for headless JavaScript testing via Capybara Webkit</li>
+<li>Rails gem for writing web applications</li>
+<li>Rbenv for managing versions of the Ruby programming language</li>
+<li>Redis for storing key-value data</li>
+<li>Ruby Build for installing Rubies</li>
+<li>Ruby stable for writing general-purpose code</li>
+<li>The Silver Searcher for finding things in files</li>
+<li>Tmux for saving project state and switching between projects</li>
+<li>Watch for periodically executing a program and displaying the output</li>
+</ul><p>It should take less than 15 minutes to install (depends on your machine).</p>
+
+<h2>
+<a name="credits" class="anchor" href="#credits"><span class="octicon octicon-link"></span></a>Credits</h2>
+
+<p><img src="http://thoughtbot.com/assets/tm/logo.png" alt="thoughtbot"></p>
+
+<p>Laptop is maintained and funded by <a href="http://thoughtbot.com/community">thoughtbot, inc</a>.
+The names and logos for thoughtbot are trademarks of thoughtbot, inc.</p>
+
+<p>Thank you, <a href="https://github.com/thoughtbot/laptop/graphs/contributors">contributors</a>!</p>
+
+<h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>Laptop is © 2011-2013 thoughtbot, inc. It is free software, and may be
+redistributed under the terms specified in the LICENSE file.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/topdev">topdev</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-42665652-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
